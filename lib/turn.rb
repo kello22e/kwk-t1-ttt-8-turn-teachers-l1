@@ -28,15 +28,19 @@ def position_taken?(arr,index)
   end
 end
 
-# code your input_to_index and move method here!
+#input_to_index method
 def input_to_index(input)
   index = input.to_i - 1
 end
-
+#move method
 def move(board,index,player = "X")
   board[index] = player
 end
+
+#turn method
 def turn(board)
+  puts "Please enter 1 -9: "
+  
   if valid_move?(board, input.to_i)
     move(board,input.to_i,"X")
   else
