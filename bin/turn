@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 
-puts "Hi! Welcome to the wonderful world of Ruby programming."
-puts "Please enter your name so that we can greet you more personally:"
-name = gets.strip
-greeting(name)
+puts "Welcome to Tic Tac Toe!"
+board = [" "," "," "," "," "," "," "," "," "]
+puts "Where would you like to go?"
+input = gets.strip
+index = input_to_index(input)
+move(board, index, "X")
+display_board(board)
