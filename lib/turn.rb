@@ -33,7 +33,7 @@ def input_to_index(input)
   index = input.to_i - 1
 end
 #move method
-def move(board,index,player = "X")
+def move(board,index)
   board[index] = player
 end
 
